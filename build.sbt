@@ -24,7 +24,6 @@ lazy val commonSettings = Seq(
   scalaVersion := "2.11.8",
   publishMavenStyle := true,
   publishArtifact in Test := false,
-  useGpg := true,
   publishTo := {
     val nexus = "https://oss.sonatype.org/"
     if (isSnapshot.value)
